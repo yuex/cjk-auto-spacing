@@ -12,7 +12,7 @@ And the remaining 30%, even worse, they have no one to inherent their legacies e
 
 Therefore, it's not hard to conclude that there must be space for pelican users who write in Chinese. 
 
-Note: I'm not a Japanese or Korean speaker, but the same thing can be concluded. 
+**Note:** I'm not a Japanese or Korean speaker, but the same thing can be concluded. 
 After all, they have lots in common with Chinese. And that's exactly why they, together as a whole, are called CJK Unified Ideographs in unicode standards
 
 # Effects
