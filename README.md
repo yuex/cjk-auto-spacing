@@ -21,12 +21,12 @@ After all, they have lots in common with Chinese. And that's exactly why they, t
     Title: CJK Auto Spacing Test Page
     中文Chinese西文English字符Character自动Auto空格Spacing
 
-Without spacing
+Without CJK Auto Spacing
 
 ![without spacing](./screenshot2.png)
 
-With spacing
+With CJK Auto Spacing
 
-![without spacing](./screenshot1.png)
+![with spacing](./screenshot1.png)
 
 [why not space?]: https://github.com/vinta/paranoid-auto-spacing
