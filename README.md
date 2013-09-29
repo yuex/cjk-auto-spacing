@@ -20,4 +20,4 @@ Without spacing
 
 ![without spacing](./screenshot2.png)
 
-[1]: https://github.com/vinta/paranoid-auto-spacing
+[why not space?]: https://github.com/vinta/paranoid-auto-spacing
