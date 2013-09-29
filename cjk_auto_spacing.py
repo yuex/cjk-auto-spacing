@@ -1,14 +1,16 @@
 from pelican import signals, contents
 
 cjk_range = [
-    (u'\u3400',u'\u4DB5'), #  CJK Unified Ideographs Extension A  3.0
-    (u'\u4E00',u'\u9FA5'), #  CJK Unified Ideographs  1.1
-    (u'\u9FA6',u'\u9FBB'), #  CJK Unified Ideographs  4.1
-    (u'\uF900',u'\uFA2D'), #  CJK Compatibility Ideographs    1.1
-    (u'\uFA30',u'\uFA6A'), #  CJK Compatibility Ideographs    3.2
-    (u'\uFA70',u'\uFAD9'), #  CJK Compatibility Ideographs    4.1
-    (u'\U00020000',u'\U0002A6D6'), # CJK Unified Ideographs Extension B  3.1
-    (u'\U0002F800',u'\U0002FA1D'), # CJK Compatibility Supplement    3.1
+    (u'\u3000',u'\u303f'), #  CJK Symbols and Punctuation
+    (u'\u3400',u'\u4DB5'), #  CJK Unified Ideographs Extension A
+    (u'\u4E00',u'\u9FA5'), #  CJK Unified Ideographs
+    (u'\u9FA6',u'\u9FBB'), #  CJK Unified Ideographs
+    (u'\uF900',u'\uFA2D'), #  CJK Compatibility Ideographs
+    (u'\uFA30',u'\uFA6A'), #  CJK Compatibility Ideographs
+    (u'\uFA70',u'\uFAD9'), #  CJK Compatibility Ideographs
+    (u'\uff00',u'\uffef'), #  Halfwidth and Fullwidth Forms
+    (u'\U00020000',u'\U0002A6D6'), # CJK Unified Ideographs Extension B
+    (u'\U0002F800',u'\U0002FA1D'), # CJK Compatibility Supplement
         ]
 
 def chinese_auto_spacing(content):
