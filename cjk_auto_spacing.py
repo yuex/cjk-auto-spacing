@@ -28,7 +28,11 @@ def chinese_auto_spacing(content):
         sp = u''
         curr_is_cjk = is_cjk(char)
 
-        if prev_is_cjk != None and prev_is_cjk != curr_is_cjk:
+        if char == u' ' or (ret and ret[-1] == u' '):
+            # do not add space to space
+            sp = u''
+
+        elif prev_is_cjk != None and prev_is_cjk != curr_is_cjk:
             sp = u' '
 
         ret = ret + sp + char
