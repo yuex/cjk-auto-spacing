@@ -12,7 +12,7 @@ cjk_range = [
         ]
 
 punc_range = [
-        (u' ',u' '), # space
+        (u'\u0000',u'\u0020'), # space
         (u'\u3000',u'\u303f'), #  CJK Symbols and Punctuation
         (u'\uff00',u'\uffef'), #  Halfwidth and Fullwidth Forms
         ]
