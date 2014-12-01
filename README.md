@@ -4,16 +4,13 @@ A pelican plugin to insert spaces between Chinese/Japanese/Korean characters and
 
 # Why
 
-For Chinese readers, If Chinese characters and English words are put together without a single tiny space, they are reading for torture rather than pleasure. 
+For Chinese readers, it's reading for torture rather than pleasure if Chinese characters and English words are put together without spaces. (See [Effects](#effects), there's a comparison)
 
-Moreover, research shows those who like putting Chinese characters and English words together without space between them have more troubles in love ([why not space?]in Chinese).
-Up to 70% get married with ones they don't love at 34 years old.
-And the remaining 30%, even worse, they have no one to inherent their legacies except their cats. 
+Moreover, research shows that those who love putting Chinese characters and English words together without space have more troubles in love (see [why space?][] in Chinese). Up to 70% marry one they don't love at 34 years old. And the other 30%, even worse, have nobody to inherit their legacies except cats. 
 
-Therefore, it's not hard to conclude that there must be space for pelican users who write in Chinese. 
+So I think it's not very hard to conclude the necessarity of space for Chinese users of pelican.
 
-**Note:** I'm not a Japanese or Korean speaker, but the same thing can be concluded. 
-After all, they have lots in common with Chinese. And that's exactly why they, together as a whole, are called CJK Unified Ideographs in unicode standards
+**Note:** I don't speak or write Japanese or Korean, but I feel we can get the same conclusion. They have lots in common. And perhaps that's why they are called CJK Unified Ideographs, together as a whole, in the unicode standards.
 
 # Effects
 
@@ -31,4 +28,6 @@ With CJK Auto Spacing
 
 ![with spacing](./screenshot1.png)
 
-[why not space?]: https://github.com/vinta/paranoid-auto-spacing
+If you feel that the first image is fine, then read it again, again and again, until you feel it's not okay.
+
+[why space?]: https://github.com/vinta/paranoid-auto-spacing
