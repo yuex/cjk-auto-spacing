@@ -18,9 +18,13 @@ punc_range = [
 ]
 
 
-def _chinese_auto_spacing(str):
+def _chinese_auto_spacing(text):
 
     def _with_range(char, check_range):
+        # XXX: actually this kind of searching will see a improvment from O(n)
+        # to O(1) when using patricia instead of list. but for a blog plugin
+        # processing offline, I think it doesn't matter too much. for those who
+        # writes a lot, this improvements may be expected.
         for start, end in check_range:
             if char >= start and char <= end:
                 return True
@@ -35,7 +39,7 @@ def _chinese_auto_spacing(str):
     ret = u''
     prev = None
 
-    for char in str:
+    for char in text:
         sp = u''
         curr_is_cjk = is_cjk(char)
         curr_is_punc = is_punc(char)
@@ -44,7 +48,7 @@ def _chinese_auto_spacing(str):
             prev_is_cjk, prev_is_punc = prev
 
             if curr_is_punc or prev_is_punc:
-                # do not add space to punctuation
+                # do not add space around punctuation
                 sp = u''
 
             elif prev_is_cjk != curr_is_cjk:
@@ -53,27 +57,22 @@ def _chinese_auto_spacing(str):
         ret = ret + sp + char
         prev = (curr_is_cjk, curr_is_punc)
 
-    if ret:
-        return ret
-    else:
-        return str
+    return ret
 
 
 def process_content(content):
-    if content._content == None:
+    if content._content is None:
         return
 
     content._content = _chinese_auto_spacing(content._content)
 
 
 def process_title(generator, metadata):
-    if 'CJK_AUTO_SPACING_TITLE' not in generator.settings:
+    if ('CJK_AUTO_SPACING_TITLE' not in generator.settings
+            or not generator.settings['CJK_AUTO_SPACING_TITLE']):
         return
 
-    if not generator.settings['CJK_AUTO_SPACING_TITLE']:
-        return
-
-    if metadata.has_key(u'title'):
+    if u'title' in metadata:
         metadata[u'title'] = _chinese_auto_spacing(metadata[u'title'])
 
 
