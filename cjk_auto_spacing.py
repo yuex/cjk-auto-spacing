@@ -1,18 +1,23 @@
 from pelican import signals, contents
 
 cjk_range = [
-    (u'\u3400', u'\u4DB5'),  # CJK Unified Ideographs Extension A
-    (u'\u4E00', u'\u9FA5'),  # CJK Unified Ideographs
-    (u'\u9FA6', u'\u9FBB'),  # CJK Unified Ideographs
-    (u'\uF900', u'\uFA2D'),  # CJK Compatibility Ideographs
-    (u'\uFA30', u'\uFA6A'),  # CJK Compatibility Ideographs
-    (u'\uFA70', u'\uFAD9'),  # CJK Compatibility Ideographs
-    (u'\U00020000', u'\U0002A6D6'),  # CJK Unified Ideographs Extension B
-    (u'\U0002F800', u'\U0002FA1D'),  # CJK Compatibility Supplement
+    (u'\u3040', u'\u309F'),    # Japanese Hiragana
+    (u'\u30A0', u'\u30FF'),    # Japanese Katakana
+    (u'\u3400', u'\u4DB5'),    # CJK Unified Ideographs Extension A
+    (u'\u4E00', u'\u9FEF'),    # CJK Unified Ideographs
+    (u'\uF900', u'\uFAFF'),    # CJK Compatibility Ideographs
+    (u'\u20000', u'\u2A6D6'),  # CJK Unified Ideographs Extension B
+    (u'\u2A700', u'\u2B734'),  # CJK Unified Ideographs Extension C
+    (u'\u2b740', u'\u2B81D'),  # CJK Unified Ideographs Extension D
+    (u'\u2B820', u'\u2CEA1'),  # CJK Unified Ideographs Extension E
+    (u'\u2ceb0', u'\u2EBE0'),  # CJK Unified Ideographs Extension F
+    (u'\u2F800', u'\u2FA1F'),  # CJK Compatibility Ideographs Supplement
 ]
 
 punc_range = [
     (u'\u0000', u'\u0020'),  # space
+    (u'\u003c', u'\u003c'),  # less-than sign
+    (u'\u003e', u'\u003e'),  # grater-than sign
     (u'\u3000', u'\u303f'),  # CJK Symbols and Punctuation
     (u'\uff00', u'\uffef'),  # Halfwidth and Fullwidth Forms
 ]
